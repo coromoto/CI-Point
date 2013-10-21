@@ -9,4 +9,7 @@ class Point
   def -@
     Point.new(-@x, -@y)
   end
+  def +(other)
+    Point.new(@x + other.x, @y + other.y)
+  end
 end
