@@ -33,4 +33,11 @@ describe Point do
       p2.y.should eq(-1)
     end
   end
+  describe "# suma de dos puntos " do
+    it "coordenada x = original.x + otro.x, coordenada y = original.y + otro.y " do
+      p2 = @p1 + @p1
+      p2.x.should eq(2)
+      p2.y.should eq(2)
+    end
+  end
 end
