@@ -6,4 +6,7 @@ class Point
   def *(value)
     Point.new(@x * value, @y * value)
   end
+  def -@
+    Point.new(-@x, -@y)
+  end
 end
