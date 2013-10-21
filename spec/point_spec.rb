@@ -26,4 +26,11 @@ describe Point do
       p2.y.should eq(-1)
     end
   end
+  describe "# opuesto de un punto" do
+    it "la coordenada x y la coordenada y se multiplican por menos uno" do
+      p2 = - @p1 
+      p2.x.should eq(-1)
+      p2.y.should eq(-1)
+    end
+  end
 end
