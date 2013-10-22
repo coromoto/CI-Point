@@ -45,23 +45,23 @@ describe Point do
   describe "# comparaciones entre dos puntos basada en su distancia al origen" do
     it "El punto (1,1) es menor que el punto (2,2)" do
       test = @p1 < @p2
-      test.should eq(True)
+      test.should eq(true)
     end
     it "El punto (1,1) es menor o igual que el punto (2,2)" do
       test = @p1 <= @p2
-      test.should eq(True)
+      test.should eq(true)
     end
     it "El punto (2,2) es mayor que el punto (1,1)" do
-      test = @p1 > @p2
-      test.should eq(True)
+      test = @p2 > @p1
+      test.should eq(true)
     end
     it "El punto (2,2) es mayor o igual que el punto (1,1)" do
-      test = @p1 >= @p2
-      test.should eq(True)
+      test = @p2 >= @p1
+      test.should eq(true)
     end
     it "El punto (1,1) es igual al punto (1,1)" do
       test = @p1 == @p3
-      test.should eq(True)
+      test.should eq(true)
     end
   end
 end

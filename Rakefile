@@ -5,6 +5,6 @@ RSpec::Core::RakeTask.new
 task :default => :spec
 
 desc "Ejecutar las espectativas de la clase Point"
-task :spec do
+task :local do
   sh "rspec -I. spec/point_spec.rb"
 end
