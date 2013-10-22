@@ -1,5 +1,5 @@
-TDD Point
-================
+Continous Integration Point
+============================
 
 Desarrollo Dirigido por Pruebas para la clase Punto usando Comparable
 
