@@ -3,6 +3,8 @@ require "lib/point.rb"
 describe Point do
   before :each do
     @p1 = Point.new(1,1)
+    @p2 = Point.new(2,2)
+    @p3 = Point.new(1,1)
   end    
     
   describe "# almacenamiento de las coordenadas" do
@@ -38,6 +40,28 @@ describe Point do
       p2 = @p1 + @p1
       p2.x.should eq(2)
       p2.y.should eq(2)
+    end
+  end
+  describe "# comparaciones entre dos puntos basada en su distancia al origen" do
+    it "El punto (1,1) es menor que el punto (2,2)" do
+      test = @p1 < @p2
+      test.should eq(True)
+    end
+    it "El punto (1,1) es menor o igual que el punto (2,2)" do
+      test = @p1 <= @p2
+      test.should eq(True)
+    end
+    it "El punto (2,2) es mayor que el punto (1,1)" do
+      test = @p1 > @p2
+      test.should eq(True)
+    end
+    it "El punto (2,2) es mayor o igual que el punto (1,1)" do
+      test = @p1 >= @p2
+      test.should eq(True)
+    end
+    it "El punto (1,1) es igual al punto (1,1)" do
+      test = @p1 == @p3
+      test.should eq(True)
     end
   end
 end

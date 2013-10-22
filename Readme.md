@@ -1,9 +1,10 @@
 TDD Point
 ================
 
-Desarrollo Dirigido por Pruebas para la clase Punto
+Desarrollo Dirigido por Pruebas para la clase Punto usando Comparable
 
   * Ejemplos con distintas decripciones y espectativas 
-  * Ejemplo de organización de distintos directorios
-  * Ejemplo de Rakefile
+  * Ejemplo de fichero '.travis.yml' 
+  * Ejemplo de 'Rakefile'
+  * Ejemplo de fichero 'Gemfile'
 
