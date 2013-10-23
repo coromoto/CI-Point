@@ -1,4 +1,4 @@
-require 'lib/point'
+require 'point'
 
 describe Point do
   before :each do
