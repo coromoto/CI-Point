@@ -7,5 +7,5 @@ task :default => :spec
 
 desc "Ejecutar las espectativas de la clase Point"
 task :local do
-  sh "rspec -Ilib -Ispec spec/point_spec.rb"
+  sh "rspec --format documentation -Ilib -Ispec spec/point_spec.rb"
 end
